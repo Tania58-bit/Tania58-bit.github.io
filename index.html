@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитная карточка</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #E0F7FA;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #4682B4;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .profile-picture {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .about {
+            background: #7abdff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact {
+            background: #7abdff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #333;
+            margin: 5px;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Татьяна Синогейкина</h1>
+            <p>Ручной тестировщик</p>
+        </header>
+
+        <div class="profile-picture">
+            <img src="file:///C:/Users/User/Desktop/мой%20сайт/фото.jpg">
+        </div>
+
+        <div class="about">
+            <h2>Обо мне</h2>
+            <p>
+                Краткое описание вашей профессиональной деятельности и опыта работы.
+                Расскажите о своих ключевых навыках и достижениях.
+            </p>
+        </div>
+
+        <div class="contact">
+            <h2>Контакты</h2>
+            <p>
+                <a href="mailto:email@example.com">Email: t.romashko@yandex.ru</a><br>
+                <a href="tel:+79991234567">Телефон: +7 (925) 040-98-62</a><br>
+            
+            </p>
+        </div>
+    </div>
+</body>
+</html>
