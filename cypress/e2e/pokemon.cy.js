@@ -3,8 +3,8 @@ describe('Покупка нового аватара', function () {
     it('Тест на покупку нового аватара для тренера', function () {   // название теста
          cy.visit('https://pokemonbattle.ru/login'); // переходим на сайт https://pokemonbattle.ru/
 
-         cy.get('#k_email').type('t.romashko@yandex.ru');  // Вводим логин
-         cy.get('#k_password').type('Tania2027%');  // Вводим пароль
+         cy.get('#k_email').type('USER_LOGIN');  // Вводим логин
+         cy.get('#k_password').type('USER_PASSWORD');  // Вводим пароль
          cy.get('.MuiButton-root').click();  // Нажимаем войти
          cy.get('.header_card_trainer').click();  // Клик в шапке на аву тренера
          cy.get('[data-qa="shop"] > #dropdown > img').click();  // Нажимаем кнопку Смена аватара
@@ -19,4 +19,5 @@ describe('Покупка нового аватара', function () {
          cy.get('.payment_status_top_title').contains('Покупка прошла успешно'); 
          cy.get('.payment_status_top_title').should('be.visible');
      })
+
  })
